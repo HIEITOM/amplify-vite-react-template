@@ -26,11 +26,8 @@ function App() {
       <button onClick={createTodo}>+ new</button>
       <ul>
         {todos.map((todo) => (
-                    onClick={() => deleteTodo(todo.id)}
-          <li key={todo.id}>
-            {todo.content}
-            <button onClick={() => deleteTodo(todo.id)}>Delete</button>
-          </li>
+          
+          <li key={todo.id}>{todo.content}</li>
         ))}
       </ul>
       <div>
