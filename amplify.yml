@@ -4,7 +4,6 @@ backend:
     preBuild:
       commands:
         - nvm use 18
-  phases:
     build:
       commands:
         - npm ci --cache .npm --prefer-offline
